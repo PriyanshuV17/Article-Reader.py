@@ -1,1 +1,18 @@
+The provided code uses Python libraries like `pyttsx3`, `requests`, and `BeautifulSoup` for text-to-speech conversion and web scraping. Here's a breakdown of what's used:
 
+1. **pyttsx3:** This library is used for text-to-speech conversion. It initializes the speech engine and sets the voice properties for speech output.
+
+2. **requests:** It is utilized for making HTTP requests to fetch the web page content.
+
+3. **BeautifulSoup:** This library is employed for parsing HTML content and extracting desired information from it, in this case, the text of the articles.
+
+Here's the summary of the code's functionality:
+
+- The user is prompted to paste an article (presumably a URL pointing to a webpage with an article).
+- The code fetches the content of the provided URL using the `requests.get()` method.
+- BeautifulSoup parses the HTML content of the webpage.
+- It extracts the text of the articles from the HTML elements with the class `.p`.
+- The text of the articles is concatenated into a single string.
+- Finally, the `pyttsx3` library is used to convert the concatenated text to speech, and the speech output is executed.
+
+To create a similar functionality, you would need to install the required libraries (`pyttsx3`, `requests`, and `BeautifulSoup`) and replicate the logic of fetching the article content from a URL, parsing it, and converting it to speech.
